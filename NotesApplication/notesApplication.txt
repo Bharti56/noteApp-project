@@ -1,0 +1,76 @@
+
+create Note 
+
+
+localhost:9090/note/postnote
+
+reqquest 
+{
+    "title": "Test",
+    "content":"Testing  note app"
+}
+
+response
+
+{
+    "title": "Test",
+    "content": "Testing  note app",
+    "nid": 1
+}
+
+
+getall 
+
+localhost:9090/note/getallnotes
+
+response
+[
+    {
+        "title": "ttest",
+        "content": "Ttesting  note app",
+        "nid": 1
+    },
+    {
+        "title": "Test1",
+        "content": "Testing  note app 1",
+        "nid": 2
+    }
+]
+
+getnotebyid
+
+localhost:9090/note/getnotebyid/2
+
+reponse
+
+{
+    "title": "Test1",
+    "content": "Testing  note app 1",
+    "nid": 2
+}
+
+
+
+
+
+update note
+
+localhost:9090/note/editnote/1
+
+request
+
+{
+    "title": "ttest",
+    "content":"Ttesting  note app"
+}
+
+
+
+response
+
+
+{
+    "title": "ttest",
+    "content": "Ttesting  note app",
+    "nid": 1
+}
